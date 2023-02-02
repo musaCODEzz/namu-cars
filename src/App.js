@@ -1,12 +1,10 @@
 
 import './App.css';
+import Layout from './components/Layouts/Layout';
 
 function App() {
-  return (
-    <div className="App">
-     <h1>Namu Cars Limited</h1>
-    </div>
-  );
+  return <Layout />;
+   
 }
 
 export default App;
