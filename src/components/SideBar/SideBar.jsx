@@ -8,7 +8,7 @@ const SideBar = () => {
   <div className="sidebar">
     <div className="sidebar__top">
       <h2>
-        <span><i class="ri-taxi-line"></i></span>Namu Cars LTD
+        <span><i class="ri-taxi-line"></i></span>Namu Cars
       </h2>
     </div>
     <div className="sidebar__content">
@@ -16,11 +16,13 @@ const SideBar = () => {
         <ul className="nav__list">
           {navLinks.map((item, index) =>(
               <li className="nav__item" key={index}>
-                <NavLink to="/dashboard" className={navClass => navClass.isActive ? 'nav__active nav__link' : 'nav__link'}>
-                  <span>
+                <NavLink to="/dashboard" className={(navClass) =>
+                   navClass.isActive ? "nav__active nav__link" : "nav__link"}>
+                  
                      <i className={item.icon}></i>
-                  </span>{""}
+                  
                  {item.display}
+                 {}
                 </NavLink>
               </li>
           ))}
