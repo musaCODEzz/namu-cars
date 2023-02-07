@@ -18,3 +18,13 @@
     color: var(--heading-color);
     font-size: 2rem;
 }
+.card__icon{
+    font-size: 2rem;
+    font-weight: 400 !important;
+    color: rgba(255, 255, 255, 0.845);
+}
+.dashboard__cards{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
